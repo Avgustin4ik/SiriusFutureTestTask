@@ -9,12 +9,14 @@ namespace Core.ApplicationStates
         private readonly StateContext _stateContext;
         private readonly IGroup<GameEntity> _quizRulesGroup;
         private readonly int _playerTryCount;
+        private readonly IGroup<UiEntity> _playerTryCounterGroup;
 
         public CompleteLevelTransitionListenerSystem(StateContext stateContext, LevelContext levelContext) : base(stateContext)
         {
             _stateContext = stateContext;
             _quizRulesGroup = Contexts.sharedInstance.game.GetGroup(GameMatcher.QuizRules);
             _playerTryCount = ConfigsCatalogsManager.GetConfig<GameConfig>().PlayerTryCount;
+            _playerTryCounterGroup = Contexts.sharedInstance.ui.GetGroup(UiMatcher.PlayerTryCounter);
         }
 
         protected override ICollector<StateEntity> GetTrigger(IContext<StateEntity> context)
@@ -32,8 +34,13 @@ namespace Core.ApplicationStates
             var userData = Contexts.sharedInstance.game.userDataEntity;
             var nextLevelNumber = userData.userDataGameLevel.value + 1;
             userData.ReplaceUserDataGameLevel(nextLevelNumber);
-            userData.ReplacePlayerTryCount(_playerTryCount);
             var score = userData.userDataMoney.value + userData.playerTryCount.value;
+            userData.ReplacePlayerTryCount(_playerTryCount);
+            foreach (var uiEntity in _playerTryCounterGroup.GetEntities())
+            {
+                uiEntity.ReplaceUIPlayerTryCount(_playerTryCount);
+            }
+            
             userData.ReplaceUserDataMoney(score);
             //todo reload level
             foreach (var quizEntity in _quizRulesGroup.GetEntities())

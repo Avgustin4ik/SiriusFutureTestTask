@@ -9,29 +9,10 @@
 public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
-        Add(new AdsActiveStateEventSystem(contexts)); // priority: 0
-        Add(new AdsRewardResultEventSystem(contexts)); // priority: 0
         Add(new ColliderEventSystem(contexts)); // priority: 0
         Add(new GameGameObjectEnabledEventSystem(contexts)); // priority: 0
         Add(new GameGameObjectNameEventSystem(contexts)); // priority: 0
         Add(new GameRendererCameraEventSystem(contexts)); // priority: 0
-        Add(new JoystickAxisOptionsEventSystem(contexts)); // priority: 0
-        Add(new JoystickBackgroundAnchoredPositionEventSystem(contexts)); // priority: 0
-        Add(new JoystickBackgroundSetActiveEventSystem(contexts)); // priority: 0
-        Add(new JoystickDeadZoneEventSystem(contexts)); // priority: 0
-        Add(new JoystickDirectionEventSystem(contexts)); // priority: 0
-        Add(new JoystickDirectionAngleEventSystem(contexts)); // priority: 0
-        Add(new JoystickHandleAnchoredPositionEventSystem(contexts)); // priority: 0
-        Add(new JoystickHandleRangeEventSystem(contexts)); // priority: 0
-        Add(new JoystickHandleSetActiveEventSystem(contexts)); // priority: 0
-        Add(new JoystickHorizontalAxisEventSystem(contexts)); // priority: 0
-        Add(new JoystickInputEventSystem(contexts)); // priority: 0
-        Add(new JoystickMoveThresholdEventSystem(contexts)); // priority: 0
-        Add(new JoystickOffsetAngleEventSystem(contexts)); // priority: 0
-        Add(new JoystickSnapXEventSystem(contexts)); // priority: 0
-        Add(new JoystickSnapYEventSystem(contexts)); // priority: 0
-        Add(new JoystickVerticalAxisEventSystem(contexts)); // priority: 0
-        Add(new JoystickViewpointEventSystem(contexts)); // priority: 0
         Add(new PlayerTryCountEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
         Add(new RectEventSystem(contexts)); // priority: 0

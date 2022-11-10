@@ -20,16 +20,8 @@ public static class InputComponentsLookup {
     public const int ButtonRestartGame = 9;
     public const int ButtonRestoreIap = 10;
     public const int ButtonStartGame = 11;
-    public const int TouchData = 12;
-    public const int TouchDownPosition = 13;
-    public const int TouchJoystickDirection = 14;
-    public const int TouchMovePosition = 15;
-    public const int TouchPhase = 16;
-    public const int TouchSwipeDirection = 17;
-    public const int TouchUpPosition = 18;
-    public const int TouchSwipeDirectionListener = 19;
 
-    public const int TotalComponents = 20;
+    public const int TotalComponents = 12;
 
     public static readonly string[] componentNames = {
         "ButtonCompleteGame",
@@ -43,15 +35,7 @@ public static class InputComponentsLookup {
         "ButtonOpenStore",
         "ButtonRestartGame",
         "ButtonRestoreIap",
-        "ButtonStartGame",
-        "TouchData",
-        "TouchDownPosition",
-        "TouchJoystickDirection",
-        "TouchMovePosition",
-        "TouchPhase",
-        "TouchSwipeDirection",
-        "TouchUpPosition",
-        "TouchSwipeDirectionListener"
+        "ButtonStartGame"
     };
 
     public static readonly System.Type[] componentTypes = {
@@ -66,14 +50,6 @@ public static class InputComponentsLookup {
         typeof(Core.Input.ButtonOpenStoreComponent),
         typeof(Core.Input.ButtonRestartGameComponent),
         typeof(Core.Input.ButtonRestoreIapComponent),
-        typeof(Core.Input.ButtonStartGameComponent),
-        typeof(Core.Input.TouchDataComponent),
-        typeof(Core.Input.TouchDownPositionComponent),
-        typeof(Core.Input.TouchJoystickDirectionComponent),
-        typeof(Core.Input.TouchMovePositionComponent),
-        typeof(Core.Input.TouchPhaseComponent),
-        typeof(Core.Input.TouchSwipeDirectionComponent),
-        typeof(Core.Input.TouchUpPositionComponent),
-        typeof(TouchSwipeDirectionListenerComponent)
+        typeof(Core.Input.ButtonStartGameComponent)
     };
 }

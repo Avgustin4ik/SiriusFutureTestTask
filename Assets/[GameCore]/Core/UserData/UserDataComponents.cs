@@ -1,5 +1,4 @@
 ﻿using System;
-using Core.DataStorage;
 using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
@@ -13,16 +12,11 @@ namespace Core.UserData
     #region player game money
 
     [Game, Event(EventTarget.Self)]
-    public sealed class UserDataMoneyComponent : IComponent, ISavableData
+    public sealed class UserDataMoneyComponent : IComponent
     {
         public int value;
 
-        public object GetValue => value;
-
-        public void SetValue(object value)
-        {
-            this.value = Convert.ToInt32(value);
-        }
+        
     }
     
     [Game, Event(EventTarget.Self)]
@@ -38,29 +32,19 @@ namespace Core.UserData
     #region player game levels
 
     [Game, Event(EventTarget.Self)]
-    public sealed class UserDataGameLevelComponent : IComponent, ISavableData
+    public sealed class UserDataGameLevelComponent : IComponent
     {
         public int value;
 
-        public object GetValue => value;
-
-        public void SetValue(object value)
-        {
-            this.value = Convert.ToInt32(value);
-        }
+        
     }
 
     [Game, Event(EventTarget.Self)]
-    public sealed class UserDataGameLevelCountComponent : IComponent, ISavableData
+    public sealed class UserDataGameLevelCountComponent : IComponent
     {
         public int value;
 
-        public object GetValue => value;
-
-        public void SetValue(object value)
-        {
-            this.value = Convert.ToInt32(value);
-        }
+        
     }
 
     [Game, Event(EventTarget.Self)]

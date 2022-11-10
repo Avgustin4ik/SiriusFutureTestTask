@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Riddle>k__BackingField: riddle
   <LetterBoxPrefab>k__BackingField: {fileID: 5514653692484536742, guid: f770597faf16e5a43a88a8930d5370df, type: 3}
-  <ScoreIncreaseDelta>k__BackingField: 100
-  <PlayerTryCount>k__BackingField: 5
-  <MinimalSymbolSearchLenght>k__BackingField: 3
+  <PlayerTryCount>k__BackingField: 10
+  <MinimalSymbolSearchLenght>k__BackingField: 6
   <textData>k__BackingField: {fileID: 4900000, guid: ca3789e7a9af8654ab239d3f81e75047, type: 3}

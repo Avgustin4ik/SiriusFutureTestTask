@@ -8,146 +8,77 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int AdsActiveStateListener = 0;
-    public const int AdsRewardResultListener = 1;
-    public const int ColliderListener = 2;
-    public const int AdsActiveState = 3;
-    public const int AdsCompleteLevelReward = 4;
-    public const int AdsGameShowRequest = 5;
-    public const int AdsPartStoreItemReward = 6;
-    public const int AdsRevivalReward = 7;
-    public const int AdsRewardResult = 8;
-    public const int AdsShowCounter = 9;
-    public const int AdsStoreReward = 10;
-    public const int Collider = 11;
-    public const int CurrentGame = 12;
-    public const int GameObjectEnabled = 13;
-    public const int GameObjectName = 14;
-    public const int GameStarted = 15;
-    public const int HashCode = 16;
-    public const int PoolObject = 17;
-    public const int Position = 18;
-    public const int Rect = 19;
-    public const int Rigidbody = 20;
-    public const int Rotation = 21;
-    public const int Scale = 22;
-    public const int Transform = 23;
-    public const int DataKey = 24;
-    public const int LoadData = 25;
-    public const int LoadingDataFailed = 26;
-    public const int LoadingDataSuccessful = 27;
-    public const int SaveData = 28;
-    public const int CurrentGameLevel = 29;
-    public const int GameLevelCleanup = 30;
-    public const int GameLevelsLoadRule = 31;
-    public const int Level = 32;
-    public const int JoystickActive = 33;
-    public const int JoystickAxisOptions = 34;
-    public const int JoystickBackgroundAnchoredPosition = 35;
-    public const int JoystickBackground = 36;
-    public const int JoystickBackgroundSetActive = 37;
-    public const int JoystickBaseRect = 38;
-    public const int JoystickCamera = 39;
-    public const int JoystickCanvas = 40;
-    public const int Joystick = 41;
-    public const int JoystickDeadZone = 42;
-    public const int JoystickDirectionAngle = 43;
-    public const int JoystickDirection = 44;
-    public const int JoystickDynamicType = 45;
-    public const int JoystickFloatingType = 46;
-    public const int JoystickHandleAnchoredPosition = 47;
-    public const int JoystickHandle = 48;
-    public const int JoystickHandleRange = 49;
-    public const int JoystickHandleSetActive = 50;
-    public const int JoystickHorizontalAxis = 51;
-    public const int JoystickInput = 52;
-    public const int JoystickMoveThreshold = 53;
-    public const int JoystickOffsetAngle = 54;
-    public const int JoystickSnapX = 55;
-    public const int JoystickSnapY = 56;
-    public const int JoystickVerticalAxis = 57;
-    public const int JoystickViewpoint = 58;
-    public const int UserData = 59;
-    public const int UserDataGameLevel = 60;
-    public const int UserDataGameLevelCount = 61;
-    public const int UserDataGameLevelLoop = 62;
-    public const int UserDataGameLevelPlayTime = 63;
-    public const int UserDataGameLevelProgress = 64;
-    public const int UserDataGameLevelRandom = 65;
-    public const int UserDataGameLevelStartPlayTime = 66;
-    public const int UserDataMoney = 67;
-    public const int UserDataScore = 68;
-    public const int QuizRules = 69;
-    public const int RiddleWord = 70;
-    public const int RiddleWordsDatabase = 71;
-    public const int GameCamera = 72;
-    public const int GameRendererCamera = 73;
-    public const int RequestSetVirtualCameraLive = 74;
-    public const int VirtualCamera = 75;
-    public const int VirtualCameraFollowTarget = 76;
-    public const int VirtualCameraIndex = 77;
-    public const int VirtualCameraLive = 78;
-    public const int VirtualCameraLookAtTarget = 79;
-    public const int VirtualCameraPriority = 80;
-    public const int VirtualCameraTarget = 81;
-    public const int WantToGetGameRendererCamera = 82;
-    public const int XAxisRotation = 83;
-    public const int GameGameObjectEnabledListener = 84;
-    public const int GameGameObjectNameListener = 85;
-    public const int GameRendererCameraListener = 86;
-    public const int JoystickAxisOptionsListener = 87;
-    public const int JoystickBackgroundAnchoredPositionListener = 88;
-    public const int JoystickBackgroundSetActiveListener = 89;
-    public const int JoystickDeadZoneListener = 90;
-    public const int JoystickDirectionAngleListener = 91;
-    public const int JoystickDirectionListener = 92;
-    public const int JoystickHandleAnchoredPositionListener = 93;
-    public const int JoystickHandleRangeListener = 94;
-    public const int JoystickHandleSetActiveListener = 95;
-    public const int JoystickHorizontalAxisListener = 96;
-    public const int JoystickInputListener = 97;
-    public const int JoystickMoveThresholdListener = 98;
-    public const int JoystickOffsetAngleListener = 99;
-    public const int JoystickSnapXListener = 100;
-    public const int JoystickSnapYListener = 101;
-    public const int JoystickVerticalAxisListener = 102;
-    public const int JoystickViewpointListener = 103;
-    public const int PlayerTryCountListener = 104;
-    public const int PositionListener = 105;
-    public const int RectListener = 106;
-    public const int RigidbodyListener = 107;
-    public const int RotationListener = 108;
-    public const int ScaleListener = 109;
-    public const int LetterBoxFail = 110;
-    public const int LetterBoxOpen = 111;
-    public const int PlayerTryCount = 112;
-    public const int UserDataGameLevelCountListener = 113;
-    public const int UserDataGameLevelListener = 114;
-    public const int UserDataGameLevelLoopListener = 115;
-    public const int UserDataGameLevelPlayTimeListener = 116;
-    public const int UserDataGameLevelProgressListener = 117;
-    public const int UserDataGameLevelStartPlayTimeListener = 118;
-    public const int UserDataMoneyListener = 119;
-    public const int UserDataScoreListener = 120;
-    public const int VirtualCameraFollowTargetListener = 121;
-    public const int VirtualCameraLookAtTargetListener = 122;
-    public const int VirtualCameraPriorityListener = 123;
-    public const int XAxisRotationListener = 124;
+    public const int ColliderListener = 0;
+    public const int Collider = 1;
+    public const int CurrentGame = 2;
+    public const int GameObjectEnabled = 3;
+    public const int GameObjectName = 4;
+    public const int GameStarted = 5;
+    public const int HashCode = 6;
+    public const int PoolObject = 7;
+    public const int Position = 8;
+    public const int Rect = 9;
+    public const int Rigidbody = 10;
+    public const int Rotation = 11;
+    public const int Scale = 12;
+    public const int Transform = 13;
+    public const int CurrentGameLevel = 14;
+    public const int GameLevelCleanup = 15;
+    public const int Level = 16;
+    public const int UserData = 17;
+    public const int UserDataGameLevel = 18;
+    public const int UserDataGameLevelCount = 19;
+    public const int UserDataGameLevelLoop = 20;
+    public const int UserDataGameLevelPlayTime = 21;
+    public const int UserDataGameLevelProgress = 22;
+    public const int UserDataGameLevelRandom = 23;
+    public const int UserDataGameLevelStartPlayTime = 24;
+    public const int UserDataMoney = 25;
+    public const int UserDataScore = 26;
+    public const int QuizRules = 27;
+    public const int RiddleWord = 28;
+    public const int RiddleWordsDatabase = 29;
+    public const int GameCamera = 30;
+    public const int GameRendererCamera = 31;
+    public const int RequestSetVirtualCameraLive = 32;
+    public const int VirtualCamera = 33;
+    public const int VirtualCameraFollowTarget = 34;
+    public const int VirtualCameraIndex = 35;
+    public const int VirtualCameraLive = 36;
+    public const int VirtualCameraLookAtTarget = 37;
+    public const int VirtualCameraPriority = 38;
+    public const int VirtualCameraTarget = 39;
+    public const int WantToGetGameRendererCamera = 40;
+    public const int XAxisRotation = 41;
+    public const int GameGameObjectEnabledListener = 42;
+    public const int GameGameObjectNameListener = 43;
+    public const int GameRendererCameraListener = 44;
+    public const int PlayerTryCountListener = 45;
+    public const int PositionListener = 46;
+    public const int RectListener = 47;
+    public const int RigidbodyListener = 48;
+    public const int RotationListener = 49;
+    public const int ScaleListener = 50;
+    public const int LetterBoxFail = 51;
+    public const int LetterBoxOpen = 52;
+    public const int PlayerTryCount = 53;
+    public const int UserDataGameLevelCountListener = 54;
+    public const int UserDataGameLevelListener = 55;
+    public const int UserDataGameLevelLoopListener = 56;
+    public const int UserDataGameLevelPlayTimeListener = 57;
+    public const int UserDataGameLevelProgressListener = 58;
+    public const int UserDataGameLevelStartPlayTimeListener = 59;
+    public const int UserDataMoneyListener = 60;
+    public const int UserDataScoreListener = 61;
+    public const int VirtualCameraFollowTargetListener = 62;
+    public const int VirtualCameraLookAtTargetListener = 63;
+    public const int VirtualCameraPriorityListener = 64;
+    public const int XAxisRotationListener = 65;
 
-    public const int TotalComponents = 125;
+    public const int TotalComponents = 66;
 
     public static readonly string[] componentNames = {
-        "AdsActiveStateListener",
-        "AdsRewardResultListener",
         "ColliderListener",
-        "AdsActiveState",
-        "AdsCompleteLevelReward",
-        "AdsGameShowRequest",
-        "AdsPartStoreItemReward",
-        "AdsRevivalReward",
-        "AdsRewardResult",
-        "AdsShowCounter",
-        "AdsStoreReward",
         "Collider",
         "CurrentGame",
         "GameObjectEnabled",
@@ -161,41 +92,9 @@ public static class GameComponentsLookup {
         "Rotation",
         "Scale",
         "Transform",
-        "DataKey",
-        "LoadData",
-        "LoadingDataFailed",
-        "LoadingDataSuccessful",
-        "SaveData",
         "CurrentGameLevel",
         "GameLevelCleanup",
-        "GameLevelsLoadRule",
         "Level",
-        "JoystickActive",
-        "JoystickAxisOptions",
-        "JoystickBackgroundAnchoredPosition",
-        "JoystickBackground",
-        "JoystickBackgroundSetActive",
-        "JoystickBaseRect",
-        "JoystickCamera",
-        "JoystickCanvas",
-        "Joystick",
-        "JoystickDeadZone",
-        "JoystickDirectionAngle",
-        "JoystickDirection",
-        "JoystickDynamicType",
-        "JoystickFloatingType",
-        "JoystickHandleAnchoredPosition",
-        "JoystickHandle",
-        "JoystickHandleRange",
-        "JoystickHandleSetActive",
-        "JoystickHorizontalAxis",
-        "JoystickInput",
-        "JoystickMoveThreshold",
-        "JoystickOffsetAngle",
-        "JoystickSnapX",
-        "JoystickSnapY",
-        "JoystickVerticalAxis",
-        "JoystickViewpoint",
         "UserData",
         "UserDataGameLevel",
         "UserDataGameLevelCount",
@@ -224,23 +123,6 @@ public static class GameComponentsLookup {
         "GameGameObjectEnabledListener",
         "GameGameObjectNameListener",
         "GameRendererCameraListener",
-        "JoystickAxisOptionsListener",
-        "JoystickBackgroundAnchoredPositionListener",
-        "JoystickBackgroundSetActiveListener",
-        "JoystickDeadZoneListener",
-        "JoystickDirectionAngleListener",
-        "JoystickDirectionListener",
-        "JoystickHandleAnchoredPositionListener",
-        "JoystickHandleRangeListener",
-        "JoystickHandleSetActiveListener",
-        "JoystickHorizontalAxisListener",
-        "JoystickInputListener",
-        "JoystickMoveThresholdListener",
-        "JoystickOffsetAngleListener",
-        "JoystickSnapXListener",
-        "JoystickSnapYListener",
-        "JoystickVerticalAxisListener",
-        "JoystickViewpointListener",
         "PlayerTryCountListener",
         "PositionListener",
         "RectListener",
@@ -265,17 +147,7 @@ public static class GameComponentsLookup {
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(AdsActiveStateListenerComponent),
-        typeof(AdsRewardResultListenerComponent),
         typeof(ColliderListenerComponent),
-        typeof(Core.Common.AdsActiveStateComponent),
-        typeof(Core.Common.AdsCompleteLevelRewardComponent),
-        typeof(Core.Common.AdsGameShowRequestComponent),
-        typeof(Core.Common.AdsPartStoreItemRewardComponent),
-        typeof(Core.Common.AdsRevivalRewardComponent),
-        typeof(Core.Common.AdsRewardResultComponent),
-        typeof(Core.Common.AdsShowCounterComponent),
-        typeof(Core.Common.AdsStoreRewardComponent),
         typeof(Core.Common.ColliderComponent),
         typeof(Core.Common.CurrentGameComponent),
         typeof(Core.Common.GameObjectEnabledComponent),
@@ -289,41 +161,9 @@ public static class GameComponentsLookup {
         typeof(Core.Common.RotationComponent),
         typeof(Core.Common.ScaleComponent),
         typeof(Core.Common.TransformComponent),
-        typeof(Core.DataStorage.DataKeyComponent),
-        typeof(Core.DataStorage.LoadData),
-        typeof(Core.DataStorage.LoadingDataFailed),
-        typeof(Core.DataStorage.LoadingDataSuccessful),
-        typeof(Core.DataStorage.SaveData),
         typeof(Core.GameLevels.CurrentGameLevelComponent),
         typeof(Core.GameLevels.GameLevelCleanupComponent),
-        typeof(Core.GameLevels.GameLevelsLoadRuleComponent),
         typeof(Core.GameLevels.LevelComponent),
-        typeof(Core.Input.JoystickActiveComponent),
-        typeof(Core.Input.JoystickAxisOptionsComponent),
-        typeof(Core.Input.JoystickBackgroundAnchoredPositionComponent),
-        typeof(Core.Input.JoystickBackgroundComponent),
-        typeof(Core.Input.JoystickBackgroundSetActiveComponent),
-        typeof(Core.Input.JoystickBaseRectComponent),
-        typeof(Core.Input.JoystickCameraComponent),
-        typeof(Core.Input.JoystickCanvasComponent),
-        typeof(Core.Input.JoystickComponent),
-        typeof(Core.Input.JoystickDeadZoneComponent),
-        typeof(Core.Input.JoystickDirectionAngleComponent),
-        typeof(Core.Input.JoystickDirectionComponent),
-        typeof(Core.Input.JoystickDynamicTypeComponent),
-        typeof(Core.Input.JoystickFloatingTypeComponent),
-        typeof(Core.Input.JoystickHandleAnchoredPositionComponent),
-        typeof(Core.Input.JoystickHandleComponent),
-        typeof(Core.Input.JoystickHandleRangeComponent),
-        typeof(Core.Input.JoystickHandleSetActiveComponent),
-        typeof(Core.Input.JoystickHorizontalAxisComponent),
-        typeof(Core.Input.JoystickInputComponent),
-        typeof(Core.Input.JoystickMoveThresholdComponent),
-        typeof(Core.Input.JoystickOffsetAngleComponent),
-        typeof(Core.Input.JoystickSnapXComponent),
-        typeof(Core.Input.JoystickSnapYComponent),
-        typeof(Core.Input.JoystickVerticalAxisComponent),
-        typeof(Core.Input.JoystickViewpointComponent),
         typeof(Core.UserData.UserDataComponent),
         typeof(Core.UserData.UserDataGameLevelComponent),
         typeof(Core.UserData.UserDataGameLevelCountComponent),
@@ -352,23 +192,6 @@ public static class GameComponentsLookup {
         typeof(GameGameObjectEnabledListenerComponent),
         typeof(GameGameObjectNameListenerComponent),
         typeof(GameRendererCameraListenerComponent),
-        typeof(JoystickAxisOptionsListenerComponent),
-        typeof(JoystickBackgroundAnchoredPositionListenerComponent),
-        typeof(JoystickBackgroundSetActiveListenerComponent),
-        typeof(JoystickDeadZoneListenerComponent),
-        typeof(JoystickDirectionAngleListenerComponent),
-        typeof(JoystickDirectionListenerComponent),
-        typeof(JoystickHandleAnchoredPositionListenerComponent),
-        typeof(JoystickHandleRangeListenerComponent),
-        typeof(JoystickHandleSetActiveListenerComponent),
-        typeof(JoystickHorizontalAxisListenerComponent),
-        typeof(JoystickInputListenerComponent),
-        typeof(JoystickMoveThresholdListenerComponent),
-        typeof(JoystickOffsetAngleListenerComponent),
-        typeof(JoystickSnapXListenerComponent),
-        typeof(JoystickSnapYListenerComponent),
-        typeof(JoystickVerticalAxisListenerComponent),
-        typeof(JoystickViewpointListenerComponent),
         typeof(PlayerTryCountListenerComponent),
         typeof(PositionListenerComponent),
         typeof(RectListenerComponent),

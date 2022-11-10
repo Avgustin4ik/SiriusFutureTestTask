@@ -25,7 +25,7 @@ namespace GameCamera
             var gameCameraEntity = gameContext.CreateEntity();
             Init(gameCameraEntity);
             gameCameraEntity.isGameCamera = true;
-            if (isCleanupOnLevelDestroy) GameEntity.isGameLevelCleanup = true;
+            // if (isCleanupOnLevelDestroy) GameEntity.isGameLevelCleanup = true;
             
             gameCameraEntity.AddGameRendererCamera(MainCamera);
 

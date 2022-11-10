@@ -26,25 +26,13 @@ namespace Core
 
         private void Start()
         {
-            Vibration.Init();
             _gameCoreSystems.Initialize();
-            //if (Application.isMobilePlatform) StartCoroutine(Vibration.VibroTest());
-        }
-
-        private void FixedUpdate()
-        {
-            // if you need physics systems
         }
 
         private void Update()
         {
             _gameCoreSystems.Execute();
             _gameCoreSystems.Cleanup();
-        }
-
-        private void LateUpdate()
-        {
-            // _gameCoreSystems.Cleanup();
         }
 
         private void OnDestroy()

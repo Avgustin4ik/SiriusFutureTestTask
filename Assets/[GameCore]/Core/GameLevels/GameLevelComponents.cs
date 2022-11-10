@@ -13,12 +13,6 @@ namespace Core.GameLevels
     }
     
     [Game]
-    public sealed class GameLevelsLoadRuleComponent : IComponent
-    {
-        public IGameLevelsLoadRule value;
-    }
-    
-    [Game]
     public sealed class GameLevelCleanupComponent : IComponent
     {
     }
@@ -28,21 +22,6 @@ namespace Core.GameLevels
     {
     }
     
-    #endregion
-
-
-    #region Level context
-
-    [Level, FlagPrefix("event")]
-    public class CleanUpGameLevelCompletedComponent : IComponent
-    {
-    }
-
-    [Level, FlagPrefix("event")]
-    public class LoadNextGameLevelComponent : IComponent
-    {
-    }
-
     #endregion
     
 }

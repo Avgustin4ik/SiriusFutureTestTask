@@ -8,18 +8,15 @@
 //------------------------------------------------------------------------------
 public static class LevelComponentsLookup {
 
-    public const int CleanUpGameLevelCompleted = 0;
-    public const int LoadNextGameLevel = 1;
 
-    public const int TotalComponents = 2;
+
+    public const int TotalComponents = 0;
 
     public static readonly string[] componentNames = {
-        "CleanUpGameLevelCompleted",
-        "LoadNextGameLevel"
+
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(Core.GameLevels.CleanUpGameLevelCompletedComponent),
-        typeof(Core.GameLevels.LoadNextGameLevelComponent)
+
     };
 }

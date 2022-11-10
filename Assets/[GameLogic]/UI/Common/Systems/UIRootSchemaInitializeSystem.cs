@@ -18,7 +18,6 @@ namespace UI
         {
             if (_uiContext.hasUIRootSchema == false)
             {
-                Dbg.Log("<color=#D00000>UiRootSchema not found on scene</color>");
                 return;
             }
 

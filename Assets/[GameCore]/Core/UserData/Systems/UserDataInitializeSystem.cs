@@ -18,7 +18,6 @@ namespace Core.UserData
         public void Initialize()
         {
             var userDataEntity = _gameContext.userDataEntity;
-            userDataEntity.AddDataKey(GameConfig.PlayerDataKey);
             // money and score
             userDataEntity.AddUserDataMoney(0); // savable
             // game levels

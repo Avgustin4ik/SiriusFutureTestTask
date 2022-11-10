@@ -9,11 +9,6 @@
 public sealed class GameCleanupSystems : Feature {
 
     public GameCleanupSystems(Contexts contexts) {
-        Add(new RemoveLoadDataGameSystem(contexts));
-        Add(new RemoveSaveDataGameSystem(contexts));
-        Add(new RemoveLoadingDataFailedGameSystem(contexts));
-        Add(new RemoveLoadingDataSuccessfulGameSystem(contexts));
-        Add(new RemoveAdsRewardResultGameSystem(contexts));
         Add(new RemoveVirtualCameraTargetGameSystem(contexts));
         Add(new DestroyRequestSetVirtualCameraLiveGameSystem(contexts));
     }
