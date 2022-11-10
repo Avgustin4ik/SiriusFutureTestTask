@@ -8,8 +8,5 @@ public sealed class GameSystems : Systems
         Add(new QuizSystems(contexts.game, contexts.ui));
         Add(new GameLoopSystems(contexts.game, contexts.ui));
         Add(new UI.UISystems(contexts.game, contexts.state, contexts.ui));
-        
-        
-        Add(new GameCameraSystems(contexts.game));
     }
 }

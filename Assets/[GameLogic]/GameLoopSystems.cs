@@ -7,6 +7,5 @@ public class GameLoopSystems : Feature
         Add(new RemovePlayerTryCountSystem(gameContext, uiContext));
         Add(new LooseConditionObserverSystem(gameContext, uiContext));
         Add(new WinConditionObserverSystem(gameContext, uiContext));
-        //todo add win condition
     }
 }
